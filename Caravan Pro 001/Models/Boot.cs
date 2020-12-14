@@ -21,7 +21,7 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (maxs < 0)
+                if (value < 0)
                 {
                     Console.WriteLine("MaximumSnelheid kan niet negatief zijn");
                 }
@@ -37,11 +37,11 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (snelh <= 0)
+                if (value <= 0)
                 {
                     Console.WriteLine("de boot is kapot");
                 }
-                else if (snelh > maxs)
+                else if (value > maxs)
                 {
                     Console.WriteLine("de huideg snelheid kan niet groter dan het maximum snelheid");
                 }

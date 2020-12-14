@@ -20,7 +20,7 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (aantalslaapkamers == 1)
+                if (value == 1)
                 {
                     Console.WriteLine("het aantalslaapkamers is niet curect zijn");
                 }
@@ -37,7 +37,7 @@ namespace Caravan_Pro_001.Models
             }
             set
             {
-                if (bewoonbaaroppervlakte < 0)
+                if (value < 0)
                 {
                     Console.WriteLine(" het bewoonbaar oppervlakte niet negatief kan zijn");
                 }

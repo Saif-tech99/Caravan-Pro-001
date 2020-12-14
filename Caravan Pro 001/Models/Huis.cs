@@ -9,8 +9,8 @@ namespace Caravan_Pro_001.Models
 {
     public class Huis : IBewoonbaar
     {
-        int slaapkamers;
-        double bewoonbaar;
+         int slaapkamers;
+         double bewoonbaar;
         public virtual int AantalSlaapKamers
         {
             get
@@ -19,7 +19,7 @@ namespace Caravan_Pro_001.Models
             }
             protected set
             {
-                if (slaapkamers <= 0)
+                if (value <= 0)
                 {
                     Console.WriteLine("rowng entery");
                 }
@@ -35,7 +35,7 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (bewoonbaar <= 0)
+                if (value <= 0)
                 {
                     Console.WriteLine("rowng entery");
                 }

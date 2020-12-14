@@ -19,10 +19,12 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (aantalbanden >=2)
+                if (value < 2)
                 {
-                    aantalbanden = value;
+                    Console.WriteLine("rowng");
                 }
+                aantalbanden = value;
+
             }
         }
 
@@ -34,7 +36,7 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (gewigt >= 0)
+                if (value >= 0)
                 {
                     gewigt = value;
                     //Console.WriteLine("er iets fout met jouw wagen");

@@ -9,11 +9,11 @@ namespace Caravan_Pro_001.Models
 {
     public class Auto : IVoertuig, ITrekker
     {
-        int maxg;
-        int maxs;
-        int snelh;
-        string merk;
-        ITrekbaar aanhangwagen;
+         int maxg;
+         int maxs;
+         int snelh;
+         string merk;
+         ITrekbaar aanhangwagen;
 
         public int MaximumSnelheid
         {

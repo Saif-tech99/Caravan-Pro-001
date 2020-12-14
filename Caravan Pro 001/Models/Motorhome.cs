@@ -9,7 +9,7 @@ namespace Caravan_Pro_001.Models
 {
     public class Motorhome : Auto, IBewoonbaar
     {
-        int aanslaapkamer;
+         int aanslaapkamer;
        private double bewoonbaaroppervlakte;
         public int AantalSlaapKamers
         {
@@ -19,7 +19,7 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (aanslaapkamer == 1)
+                if (value == 1)
                 {
                     aanslaapkamer = value;
                 }
@@ -40,7 +40,7 @@ namespace Caravan_Pro_001.Models
             {
                 try
                 {
-                    if (bewoonbaaroppervlakte >= 0)
+                    if (value >= 0)
                     {
                         bewoonbaaroppervlakte = value;
                     }

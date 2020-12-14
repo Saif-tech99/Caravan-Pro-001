@@ -12,11 +12,7 @@ namespace Caravan_pro_Nr001
     {
         static void Main(string[] args)
         {
-            Caravan caravan = new Caravan(3, 3, 4, 3000);
-            Console.WriteLine("banden " + caravan.AantalBandeen);
-            //Console.WriteLine("slap" + caravan.AantalSlaapKamers);
-            //Console.WriteLine("bewon" + caravan.BewoonbaarOppervvlakte);
-            //Console.WriteLine("gewigt" + caravan.Gewicht);
+           
         }
     }
 }

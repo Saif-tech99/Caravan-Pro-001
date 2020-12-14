@@ -19,11 +19,11 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (aantalslapkamers <= 2 || aantalslapkamers >= 0)
+                if (value <= 2 || value >= 0)
                 {
                     aantalslapkamers = value;
                 }
-                if (aantalslapkamers < 0 || aantalslapkamers > 2)
+                if (value < 0 || value > 2)
                 {
                     Console.WriteLine("rowng value");
                 }
@@ -38,7 +38,7 @@ namespace Caravan_Pro_001.Models
             }
             private set
             {
-                if (bewoonbaarOv <= 0)
+                if (value <= 0)
                 {
                     Console.WriteLine("rowng entery");
                 }

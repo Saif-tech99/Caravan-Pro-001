@@ -8,7 +8,7 @@ namespace Caravan_Pro_001.Models
 {
     public class Kasteel : Huis
     {
-        int slaapkamers;
+         int slaapkamers;
         public override int AantalSlaapKamers
         {
             get
@@ -17,7 +17,7 @@ namespace Caravan_Pro_001.Models
             }
             protected set
             {
-                if (slaapkamers<3)
+                if (value < 3)
                 {
                     Console.WriteLine("rowng entery");
                 }
