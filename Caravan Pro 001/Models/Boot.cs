@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Caravan_Pro_001.Models
 {
-    public class Boot : Eigendom, IVoertuig
+    public abstract class Boot : Eigendom, IVoertuig
     {
         int maxs;
         int snelh;
@@ -35,7 +35,7 @@ namespace Caravan_Pro_001.Models
             {
                 return snelh;
             }
-            private set
+            protected set
             {
                 if (value <= 0)
                 {
@@ -83,16 +83,16 @@ namespace Caravan_Pro_001.Models
 
         public override void BepaalPrijs(double nieuweprijs)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"boot niewue prijs is {nieuweprijs}");
         }
 
         public override void VerkoopAan(string nieuweeigenaar)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"boot niewue eignaar is {nieuweeigenaar}");
         }
 
         public Boot(int maxs, int snelh, string bmerk, string eignaar, double prijs)
-            : base(eignaar,prijs)
+            : base(eignaar, prijs)
         {
             this.Merk = bmerk;
             this.MaximumSnelheid = maxs;

@@ -52,7 +52,7 @@ namespace Caravan_Pro_001.Models
 
         public override void BepaalPrijs(double nieuweprijs)
         {
-            
+            throw new NotImplementedException();
         }
 
         public override void VerkoopAan(string nieuweeigenaar)
