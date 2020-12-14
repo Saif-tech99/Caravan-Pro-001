@@ -55,8 +55,8 @@ namespace Caravan_Pro_001.Models
                 }
             }
         }
-        public Motorhome(int slaapkamer, double bewoonbaaroppervlakte, int maxs, int maxg, int snelh, string automerk, ITrekbaar aanhangwagen)
-            :base(maxs, maxg, snelh, automerk, aanhangwagen)
+        public Motorhome(int slaapkamer, double bewoonbaaroppervlakte, int maxs, int maxg, int snelh, string automerk, ITrekbaar aanhangwagen, string eignaar, double prijs)
+            :base(maxs, maxg, snelh, automerk, aanhangwagen, eignaar, prijs)
         {
             this.AantalSlaapKamers = slaapkamer;
             this.BewoonbaarOppervvlakte = bewoonbaaroppervlakte;

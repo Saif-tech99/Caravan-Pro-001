@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Caravan_Pro_001.Models
 {
-    public class Aanhangwagen : ITrekbaar
+    public class Aanhangwagen : Eigendom, ITrekbaar
     {
         int aantalbanden;
         int gewigt;
@@ -43,10 +43,21 @@ namespace Caravan_Pro_001.Models
                 }
             }
         }
-        public Aanhangwagen(int aantalbanden, int gewigt)
+        public Aanhangwagen(int aantalbanden, int gewigt, string eignaar, double prijs)
+            : base(eignaar, prijs)
         {
             this.AantalBandeen = aantalbanden;
             this.Gewicht = gewigt;
+        }
+
+        public override void BepaalPrijs(double nieuweprijs)
+        {
+            
+        }
+
+        public override void VerkoopAan(string nieuweeigenaar)
+        {
+            throw new NotImplementedException();
         }
     }
 }

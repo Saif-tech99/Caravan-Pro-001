@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Caravan_Pro_001.Models
 {
-    public class Huis : IBewoonbaar
+    public class Huis : Eigendom, IBewoonbaar
     {
          int slaapkamers;
          double bewoonbaar;
@@ -42,10 +42,21 @@ namespace Caravan_Pro_001.Models
                 bewoonbaar = value;
             }
         }
-        public Huis(int slaapk, double bewoonbaar)
+        public Huis(int slaapk, double bewoonbaar, string eignaar, double prijs)
+            :base(eignaar,prijs)
         {
             this.AantalSlaapKamers = slaapk;
             this.BewoonbaarOppervvlakte = bewoonbaar;
+        }
+
+        public override void BepaalPrijs(double nieuweprijs)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void VerkoopAan(string nieuweeigenaar)
+        {
+            throw new NotImplementedException();
         }
     }
 }

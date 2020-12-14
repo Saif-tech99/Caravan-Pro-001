@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Caravan_Pro_001.Models
 {
-    public class Auto : IVoertuig, ITrekker
+    public class Auto : Eigendom, IVoertuig, ITrekker
     {
          int maxg;
          int maxs;
@@ -126,7 +126,8 @@ namespace Caravan_Pro_001.Models
             }
             Console.WriteLine(snelh);
         }
-        public Auto(int maxs, int maxg, int snelh, string automerk, ITrekbaar aanhangwagen)
+        public Auto(int maxs, int maxg, int snelh, string automerk, ITrekbaar aanhangwagen,string eignaar, double prijs)
+            :base(eignaar,prijs)
         {
             this.Merk = merk;
             this.MaximumSnelheid = maxs;
@@ -134,6 +135,16 @@ namespace Caravan_Pro_001.Models
             this.Snelheid = snelh;
             this.aanHangwagen = aanhangwagen;
             this.Merk = automerk;
+        }
+
+        public override void BepaalPrijs(double nieuweprijs)
+        {
+
+        }
+
+        public override void VerkoopAan(string nieuweeigenaar)
+        {
+            throw new NotImplementedException();
         }
     }
 }

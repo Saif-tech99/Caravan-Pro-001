@@ -8,7 +8,7 @@ namespace Caravan_Pro_001.Models
 {
     public class Kasteel : Huis
     {
-         int slaapkamers;
+        int slaapkamers;
         public override int AantalSlaapKamers
         {
             get
@@ -26,10 +26,10 @@ namespace Caravan_Pro_001.Models
         }
         public override double BewoonbaarOppervvlakte => base.BewoonbaarOppervvlakte;
 
-        public Kasteel(int slaapk,double bewoonbaar)
-            :base(slaapk, bewoonbaar)
+        public Kasteel(int slaapk, double bewoonbaar, string eignaar, double prijs)
+            : base(slaapk, bewoonbaar,eignaar, prijs)
         {
-
+            this.AantalSlaapKamers = slaapk;
         }
     }
 }

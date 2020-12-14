@@ -45,8 +45,8 @@ namespace Caravan_Pro_001.Models
                 bewoonbaarOv = value;
             }
         }
-        public Woonboot(int slaapkamers, double bewoonbaarvO, int maxs, int snelh, string bmerk)
-            : base(maxs, snelh, bmerk)
+        public Woonboot(int slaapkamers, double bewoonbaarvO, int maxs, int snelh, string bmerk, string eignaar, double prijs)
+            : base(maxs, snelh, bmerk,eignaar,prijs)
         {
             this.AantalSlaapKamers = slaapkamers;
             this.BewoonbaarOppervvlakte = bewoonbaarvO;

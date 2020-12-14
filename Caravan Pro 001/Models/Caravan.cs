@@ -44,8 +44,8 @@ namespace Caravan_Pro_001.Models
                 bewoonbaaroppervlakte = value;
             }
         }
-        public Caravan(int aantalslaapkamer, double bewoonbaaroppervlakte, int aantalbanden, int gewigt)
-            : base(aantalbanden, gewigt)
+        public Caravan(int aantalslaapkamer, double bewoonbaaroppervlakte, int aantalbanden, int gewigt, string eignaar, double prijs)
+            : base(aantalbanden, gewigt, eignaar,prijs)
         {
             this.AantalSlaapKamers = aantalslaapkamer;
             this.BewoonbaarOppervvlakte = bewoonbaaroppervlakte;

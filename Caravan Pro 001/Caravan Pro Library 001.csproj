@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Intarfaces\IBelaadbaar.cs" />
     <Compile Include="Intarfaces\IBewoonbaar.cs" />
+    <Compile Include="Intarfaces\IEigendom.cs" />
     <Compile Include="Intarfaces\ITrekbaar.cs" />
     <Compile Include="Intarfaces\ITrekker.cs" />
     <Compile Include="Intarfaces\IVoertuig.cs" />
@@ -49,6 +51,7 @@
     <Compile Include="Models\Auto.cs" />
     <Compile Include="Models\Boot.cs" />
     <Compile Include="Models\Caravan.cs" />
+    <Compile Include="Models\Eigendom.cs" />
     <Compile Include="Models\Huis.cs" />
     <Compile Include="Models\Kasteel.cs" />
     <Compile Include="Models\Motorhome.cs" />
